@@ -1,0 +1,15 @@
+stages:
+  - build
+  - deploy
+
+build_laravel:
+  stage: build
+  image: php:8.2-cli
+  script:
+    - php -v
+    - echo "Build Laravel berhasil"
+
+deploy_local:
+  stage: deploy
+  script:
+    - echo "Deploy selesai"
